@@ -5,3 +5,33 @@ create table roomdetails(hotel_id varchar2(4),room_id varchar2(4) primary key,ro
 create table BookingDetails(booking_id varchar2(4),room_id varchar2(4),user_id varchar2(4),booked_from date,booked_to date,no_of_adults number,no_of_children number,amount number(10,2),constraint fk_room_id foreign key(room_id) references roomdetails(room_id) on delete cascade,constraint fk_user_id foreign key(user_id) references users(user_id) on delete cascade);
 
 create table users(user_id varchar2(4) primary key,password varchar2(7),role varchar2(10),user_name varchar2(20),mobile_no varchar2(10),phone varchar2(10),address varchar2(25),email varchar2(15) on delete cascade);
+
+
+
+
+------------------------------
+Logger 
+
+PropertyConfigurator.configure("resources/log4j.properties");
+		Logger myLogger =  Logger.getLogger(DatabaseImpl.class.getName());
+
+
+
+log4j.properties
+
+---------
+log4j.rootLogger=INFO, logfile
+
+log4j.appender.appender=org.apache.log4j.ConsoleAppender
+log4j.appender.appender.layout=org.apache.log4j.PatternLayout
+log4j.appender.appender.layout.ConversionPattern=%d %p [%c] - <%m>%n
+
+log4j.appender.logfile=org.apache.log4j.RollingFileAppender
+log4j.appender.logfile.File=basic.log
+log4j.appender.logfile.MaxFileSize=512KB
+# Keep three backup files.
+log4j.appender.logfile.MaxBackupIndex=3
+# Pattern to output: date priority [category] - message
+log4j.appender.logfile.layout=org.apache.log4j.PatternLayout
+log4j.appender.logfile.layout.ConversionPattern=%d %p [%c] - %m%n
+log4j.appender.logfile.layout.ConversionPattern=%d{yyyy-MM-dd}-%t-%-5p-%-10c:%m%n
