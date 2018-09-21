@@ -1,0 +1,47 @@
+Hi All,
+ 
+I am attaching some assignments for the topics we covered today.
+Please register yourself to the ServiceNow developer site and get a personal developer instance for the Kingston release from the 
+link: https://developer.servicenow.com/
+Complete the given assignments on your personal developer instance.
+ 
+We would expect you to be ready with your assignments by Monday morning.
+
+                                    Assignments
+
+Topic: Users, Roles and Groups
+
+1.	Create the below users:
+Name	First Name	Last Name	Email ID	Manager
+Iron Man	Iron	Man	iman@snow.com
+Abel Tutor
+Super Man	Super	Man	sman@snow.com
+Abel Tutor
+Bat Man	Bat	Man	bman@snow.com
+Abel Tutor
+ 	 	 	 	 
+ 	 	 	 	 
+Narendra Modi	Narendra 	Modi	nmodi@snow.com
+Abraham Lincoln
+Donald Trump	Donald	Trump	dtrump@snow.com
+Abraham Lincoln
+Scott Morrison	Scott	Morrison	smorrison@snow.com
+Abraham Lincoln
+ 	 	 	 	 
+ 	 	 	 	 
+Local Administrator	Local 	Admin	ladmin@snow.com
+ 
+
+2.	Create the below groups:
+a.	Super Heroes (group email id: sheroes@snow.com)
+b.	Country Leaders (group email id: cleaders@snow.com)
+c.	Add the first set of three users to the group: Super Heroes and second set of the three users to the group: Country Leaders.
+
+3.	Create the below custom roles:
+a.	Heroes
+b.	Leaders
+
+4.	Add the role: itil to the roles: Heroes and Leaders.
+5.	Add the role Heroes to the Group: Super heroes.
+6.	Add the role Leaders to the Group: Country Leaders. 
+7.	To the last user (Local administrator) add the roles: admin and security_admin. 
